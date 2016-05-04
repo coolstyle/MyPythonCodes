@@ -1,0 +1,16 @@
+#first ,creat a list containing names
+
+listA=['anna','ATONY','maRRy','ToNY']
+#second step:change the name into lowercase
+
+listB=list([s.lower() for s in listA])
+
+#third step:define a function:
+
+def cap(name):
+    return name.capitalize()
+    
+#forth step:capitalize the names
+
+listC=list(map(cap,listB))
+print(listC)
